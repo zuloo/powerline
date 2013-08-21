@@ -33,7 +33,8 @@
 		"environment":              { "fg": "gray8", "bg": "gray2" },
 		"error":                    { "fg": "brightestred", "bg": "darkred", "attr": ["bold"] },
 		"warning":                  { "fg": "brightyellow", "bg": "darkorange", "attr": ["bold"] },
-		"current_tag":              { "fg": "gray9", "bg": "gray2" }
+		"current_tag":              { "fg": "gray9", "bg": "gray2" },
+		"current_tag_parent":       { "fg": "gray7", "bg": "gray2" }
 	},
 	"mode_translations": {
 		"nc": {
