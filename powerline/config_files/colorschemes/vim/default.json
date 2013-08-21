@@ -34,7 +34,12 @@
 		"error":                    { "fg": "brightestred", "bg": "darkred", "attr": ["bold"] },
 		"warning":                  { "fg": "brightyellow", "bg": "darkorange", "attr": ["bold"] },
 		"current_tag":              { "fg": "gray9", "bg": "gray2" },
-		"current_tag_parent":       { "fg": "gray7", "bg": "gray2" }
+		"current_tag_parent":       { "fg": "gray7", "bg": "gray2" },
+		"ctrlp.regex":              { "fg": "brightgreen", "bg": "darkestgreen", "attr": ["bold"] },
+		"ctrlp.prev":               { "fg": "gray7", "bg": "gray4" },
+		"ctrlp.item":               { "fg": "white", "bg": "gray7", "attr": ["bold"] },
+		"ctrlp.next":               { "fg": "gray7", "bg": "gray4" },
+		"ctrlp.marked":             { "fg": "brightestred", "bg": "darkestred", "attr": ["bold"] }
 	},
 	"mode_translations": {
 		"nc": {
