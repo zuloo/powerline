@@ -7,6 +7,12 @@ Powerline
    :glob:
 
    overview
+   installation
+   usage
+   configuration-and-customization
+   troubleshooting
+   tips-and-tricks
+   license-and-credits
 
 Indices and tables
 ==================
