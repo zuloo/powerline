@@ -365,13 +365,12 @@ class WeatherSegment(ThreadedSegment):
 			# only in .update()
 			if not self.location:
 				location_data = json.loads(urllib_read('http://freegeoip.net/json/'))
-				self.location = ','.join([location_data['city'],
-											location_data['region_code'],
+				self.location = ', '.join([location_data['city'],
 											location_data['country_code']])
 			query_data = {
 				'q':
-				'use "http://github.com/yql/yql-tables/raw/master/weather/weather.bylocation.xml" as we;'
-				'select * from we where location="{0}" and unit="c"'.format(self.location).encode('utf-8'),
+				'select item.condition.code, item.condition.temp from weather.forecast '
+				'where u = "c" and woeid in (select woeid from geo.places where text = "{0}" limit 1) limit 1;'.format(self.location).encode('utf-8'),
 				'format': 'json',
 			}
 			self.url = 'http://query.yahooapis.com/v1/public/yql?' + urllib_urlencode(query_data)
@@ -381,7 +380,7 @@ class WeatherSegment(ThreadedSegment):
 			self.error('Failed to get response')
 			return
 		response = json.loads(raw_response)
-		condition = response['query']['results']['weather']['rss']['channel']['item']['condition']
+		condition = response['query']['results']['channel']['item']['condition']
 		condition_code = int(condition['code'])
 		temp = float(condition['temp'])
 
