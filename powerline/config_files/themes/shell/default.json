@@ -4,7 +4,7 @@
 		"hostname": {
 			"before": " ",
 			"args": {
-				"only_if_ssh": true
+				"only_if_ssh": true 
 			}
 		},
 		"virtualenv": {
@@ -21,10 +21,10 @@
 				"name": "mode"
 			},
 			{
-				"name": "hostname"
+				"name": "user"
 			},
 			{
-				"name": "user"
+				"name": "hostname"
 			},
 			{
 				"name": "virtualenv"
@@ -47,6 +47,19 @@
 			},
 			{
 				"name": "branch"
+			},
+			{
+				"name": "date", 
+				"args": {
+					"format": "%d. %B %Y"
+				}
+			},
+			{
+				"name": "date",
+				"args": {
+					"istime": "true",
+					"format": "%H:%M.%S"
+				}
 			}
 		]
 	}

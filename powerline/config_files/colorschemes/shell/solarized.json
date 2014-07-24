@@ -1,7 +1,13 @@
 {
 	"name": "Solarized dark for shell",
 	"groups": {
+		"dirsize":            { "fg": "darkgreencopper", "bg": "gray61", "attr": [] },
 		"jobnum":             { "fg": "oldlace", "bg": "darkgreencopper", "attr": [] },
+		"date":               { "fg": "royalblue5", "bg": "gray61", "attr": [] },
+		"time":               { "fg": "royalblue5", "bg": "gray61", "attr": ["bold"] },
+		"time:divider":       { "fg": "royalblue5", "bg": "gray61", "attr": [] },
+		"uptime":             { "fg": "royalblue5", "bg": "gray61", "attr": [] },
+		"background:divider": { "fg": "gray61", "bg": "gray61", "attr": [] },
 		"exit_fail":          { "fg": "oldlace", "bg": "red", "attr": [] },
 		"exit_success":       { "fg": "oldlace", "bg": "green", "attr": [] },
 		"mode":               { "fg": "oldlace", "bg": "green", "attr": ["bold"] }

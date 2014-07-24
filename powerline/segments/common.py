@@ -1188,3 +1188,17 @@ def battery(pl, format='{capacity:3.0%}', steps=5, gamify=False, full_heart='♥
 			'gradient_level': 100 - capacity,
 		})
 	return ret
+
+
+@requires_segment_info
+def dirsize(pl, segment_info):
+    name = segment_info["getcwd"]()
+    unit = "%i byte"
+    size = sum(os.lstat(f).st_size for f in os.listdir(name) if os.path.isfile(f))
+    if size > (1024*1024):
+        size /= 1024*1024
+        unit = "%i Mb"
+    elif size > 1024:
+        size /= 1024
+        unit = "%i Kb"
+    return unit % size

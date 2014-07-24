@@ -4,35 +4,63 @@
 		"hostname": {
 			"before": " ",
 			"args": {
-				"only_if_ssh": true
+				"only_if_ssh": true 
 			}
 		},
 		"virtualenv": {
 			"before": "ⓔ  "
 		},
 		"branch": {
-			"before": " "
+			"before": " ",
+			"args": {
+				"status_colors": true
+			}
 		}
 	},
 	"segments": {
+		"above": [
+			{
+				"left": [
+					{
+						"name": "date",
+						"args": {
+							"format": "%d.%b %Y KW%V"
+						}
+					},
+					{
+						"name": "date",
+						"args": {
+							"format": "%H:%M",
+							"istime": true
+						}
+					},
+					{
+						"name": "uptime"
+					},
+					{
+						"name": "virtualenv"
+					},
+					{
+						"name": "branch"
+					},
+					{
+						"name": "cwd",
+						"args": {
+							"dir_limit_depth": 5
+						}
+					},
+					{
+						"name": "dirsize"
+					}
+				]
+			}
+		],
 		"left": [
 			{
 				"name": "hostname"
 			},
 			{
 				"name": "user"
-			},
-			{
-				"name": "virtualenv"
-			},
-			{
-				"name": "branch"
-			},
-			{
-				"name": "cwd",
-				"args": {
-					"dir_limit_depth": 3
-				}
 			},
 			{
 				"module": "powerline.segments.shell",
