@@ -11,7 +11,7 @@
 		"cwd":                { "fg": "lightyellow", "bg": "darkgreencopper", "attr": [] },
 		"cwd:current_folder": { "fg": "oldlace", "bg": "darkgreencopper", "attr": ["bold"] },
 		"cwd:divider":        { "fg": "gray61", "bg": "darkgreencopper", "attr": [] },
-		"hostname":           { "fg": "royalblue5", "bg": "green", "attr": [] },
+		"hostname":           { "fg": "oldlace", "bg": "darkgreencopper", "attr": [] },
 		"environment":        { "fg": "oldlace", "bg": "green", "attr": [] },
 		"dirsize":            { "fg": "darkgreencopper", "bg": "gray61", "attr": [] },
 		"jobnum":             { "fg": "oldlace", "bg": "darkgreencopper", "attr": [] },

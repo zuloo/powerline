@@ -2,6 +2,7 @@
 	"name": "Solarized dark for shell",
 	"groups": {
 		"dirsize":            { "fg": "darkgreencopper", "bg": "gray61", "attr": [] },
+		"hostname":            { "fg": "royalblue5", "bg": "green", "attr": [] },
 		"jobnum":             { "fg": "oldlace", "bg": "darkgreencopper", "attr": [] },
 		"date":               { "fg": "royalblue5", "bg": "gray61", "attr": [] },
 		"time":               { "fg": "royalblue5", "bg": "gray61", "attr": ["bold"] },
